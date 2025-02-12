@@ -57,17 +57,8 @@ function Layout({ children }) {
         {/* Logo de Kasa */}
         <img src={logoFooter} alt="Kasa logo footer" className="logo-footer" />
         {/* Copyright du footer */}
-        <p>© 2024 Kasa. Tous droits réservés.</p>
-        <p>
-          ⚠️ Ce site est une démo d'un projet OpenClassRooms par{' '}
-          <a
-            href="https://mikepixel.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <strong>MikePixelDev</strong>
-          </a>
-        </p>
+        <p>© 2025 Kasa. Tous droits réservés.</p>
+  
       </footer>
     </div>
   );
