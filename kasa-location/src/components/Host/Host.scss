@@ -1,0 +1,35 @@
+// src/components/Host/Host.scss
+
+// Importation des variables globales
+@import '../../styles/main.scss';
+
+.host {
+  display: flex;
+  align-items: center;
+  max-width: 33%;
+  gap: 10px;
+  @media only screen and (min-width: 1024px) {
+    max-width: 30%;
+  }
+}
+
+.host-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: right;
+  @media only screen and (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
+
+.host-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  @media only screen and (min-width: 1024px) {
+    width: 64px;
+    height: 64px;
+  }
+}
