@@ -1,7 +1,7 @@
 // src/pages/AboutPage.jsx
 // Ce composant gère la page À Propos de l'application Kasa.
 
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import Banner from '../components/Banner/Banner'; // Importation du composant Banner
 import Collapse from '../components/Collapse/Collapse'; // Importation du composant Collapse
 
@@ -9,21 +9,7 @@ const aboutBannerImg = './images/banner-kasa-about.webp'; // Définition du chem
 
 // Définition du composant AboutPage
 const AboutPage = () => {
-  useEffect(() => {
-    // Mettre à jour le titre de la page
-    document.title = 'Kasa • À propos';
 
-    // Ajouter une balise canonique pour la page À propos
-    const canonicalLink = document.createElement('link');
-    canonicalLink.rel = 'canonical';
-    canonicalLink.href = 'https://kasa.city/about';
-    document.head.appendChild(canonicalLink);
-
-    // Nettoyer la balise canonique lorsque le composant est démonté
-    return () => {
-      document.head.removeChild(canonicalLink);
-    };
-  }, []);
 
   return (
     <>

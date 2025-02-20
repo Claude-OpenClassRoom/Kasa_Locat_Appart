@@ -1,7 +1,7 @@
 // src/App.jsx
 
 // Importation du composant AppRouter depuis le fichier './components/Router'
-import AppRouter from './components/Router';
+import AppRouter from './components/Router/Router';
 
 // Définition de la fonction composant App
 function App() {

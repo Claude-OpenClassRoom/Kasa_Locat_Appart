@@ -1,5 +1,5 @@
 // Importation des hooks et composants nécessaires depuis React et leurs chemins relatifs
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import Banner from '../components/Banner/Banner';
 import HousingCard from '../components/HousingCard/HousingCard';
 
@@ -9,25 +9,7 @@ const homeBannerImg = './images/banner-kasa-home.webp';
 // Déclaration du composant fonctionnel HomePage
 const HomePage = () => {
   // Utilisation de useEffect pour mettre à jour le titre de la page lorsque le composant est monté
-  useEffect(() => {
-    // Mettre à jour le titre de la page
-    document.title = 'Kasa • Location d’appartements entre particuliers';
 
-    // Nettoyer la balise canonique lorsque le composant est démonté
-    const canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (canonicalLink) {
-      document.head.removeChild(canonicalLink);
-    }
-    // Ajouter une balise canonique pour la page d'accueil
-    const newCanonicalLink = document.createElement('link');
-    newCanonicalLink.rel = 'canonical';
-    newCanonicalLink.href = 'https://kasa.city/';
-    document.head.appendChild(newCanonicalLink);
-
-    return () => {
-      document.head.removeChild(newCanonicalLink);
-    };
-  }, []);
 
   // Retourne le rendu JSX de la page d'accueil
   return (
