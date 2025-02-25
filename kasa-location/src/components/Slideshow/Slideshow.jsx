@@ -10,17 +10,30 @@ function Slideshow({ images }) {
 
   // Fonction pour aller à l'image suivante
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex)=>{
       // Si l'index courant est le dernier, revenir au premier, sinon aller à l'image suivante
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+      //prevIndex === images.length - 1 ? 0 : prevIndex + 1,
+      if (prevIndex === images.length -1) {
+        return 0;
+       } else {
+        return prevIndex + 1;
+        }
+      }
+
     );
   };
 
   // Fonction pour aller à l'image précédente
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
+    setCurrentIndex((prevIndex) =>{
       // Si l'index courant est le premier, aller à la dernière image, sinon aller à l'image précédente
-      prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+     // prevIndex === 0 ? images.length - 1 : prevIndex - 1,
+     if(prevIndex === 0) {
+      return images.length - 1;
+      } else {
+      return prevIndex - 1;
+      }
+    }
     );
   };
 

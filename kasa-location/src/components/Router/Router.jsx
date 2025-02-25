@@ -18,6 +18,7 @@ function AppRouter() {
       {/* Le composant Layout est utilisé pour encapsuler la structure globale de la page */}
       <Layout>
         {/* Le composant Routes rend les <Route> qui correspondent à l'URL actuelle */}
+     
         <Routes>
           {/* Route exacte pour la page d'accueil */}
           <Route exact path="/" element={<HomePage />} />
@@ -27,6 +28,7 @@ function AppRouter() {
           <Route path="/housing/:id" element={<HousingPage />} />
           {/* Route par défaut pour les URL non correspondantes, affichant une page d'erreur 404 */}
           <Route path="*" element={<Error404Page />} />
+        
         </Routes>
       </Layout>
     </Router>

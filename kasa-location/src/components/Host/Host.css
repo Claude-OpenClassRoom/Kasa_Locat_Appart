@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.error404 {
+  display: flex;
+  flex-direction: column;
+  gap: 113px;
+  text-align: center;
+  padding: 113px 57px;
+}
+.error404 h1 {
+  font-size: 96px;
+  font-weight: 700;
+  color: #ff6060;
+}
+.error404 p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  color: #ff6060;
+}
+.error404 a {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: underline;
+}
+@media (min-width: 768px) {
+  .error404 {
+    gap: 139px;
+    text-align: center;
+    padding: 139px 57px;
+  }
+  .error404 h1 {
+    font-size: 288px;
+  }
+  .error404 p {
+    font-size: 36px;
+  }
+}
+
+.housing-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .housing-sheet .opened-collapse .fa-2xl {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .housing-sheet {
+    gap: 30px;
+  }
+  .housing-sheet .opened-collapse h2 {
+    font-size: 18px;
+  }
+  .housing-sheet .opened-collapse .fa-2xl {
+    font-size: 1.5em;
+  }
+}
+
+.housing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media only screen and (min-width: 1024px) {
+  .housing-info {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.housing-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.housing-details h1 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ff6060;
+}
+.housing-details p {
+  font-size: 14px;
+  font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .housing-details {
+    gap: 15px;
+  }
+  .housing-details h1 {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .housing-details p {
+    font-size: 18px;
+  }
+}
+
+.host-ratings {
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 1024px) {
+  .host-ratings {
+    flex-direction: column-reverse;
+    gap: 21px;
+    justify-content: center;
+  }
+}
+
+.housing-collapses {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.housing-collapses li {
+  list-style: none;
+}
+@media only screen and (min-width: 1024px) {
+  .housing-collapses {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 76px;
+  }
+  .housing-collapses > div {
+    flex: 1;
+  }
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  max-width: 33%;
+  gap: 10px;
+}
+@media only screen and (min-width: 1024px) {
+  .host {
+    max-width: 30%;
+  }
+}
+
+.host-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff6060;
+  text-align: right;
+}
+@media only screen and (min-width: 1024px) {
+  .host-name {
+    font-size: 18px;
+  }
+}
+
+.host-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (min-width: 1024px) {
+  .host-picture {
+    width: 64px;
+    height: 64px;
+  }
+}/*# sourceMappingURL=Host.css.map */

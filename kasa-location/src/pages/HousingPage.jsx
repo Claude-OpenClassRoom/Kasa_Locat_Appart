@@ -12,6 +12,7 @@ import Collapse from '../components/Collapse/Collapse';
 import Tags from '../components/Tags/Tags';
 import Host from '../components/Host/Host';
 import Rating from '../components/Rating/Rating';
+import Error404Page from './Error404Page';
 
 function HousingPage() {
   // Récupérer l'ID du logement depuis les paramètres d'URL
@@ -27,7 +28,7 @@ function HousingPage() {
 
   // Si le logement n'est pas trouvé, retourner null (la redirection est gérée par useEffect)
   if (!logement) {
-    return null;
+    return (<Error404Page/>);
   }
 
   // Rendre les informations du logement
