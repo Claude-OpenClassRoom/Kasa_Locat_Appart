@@ -17,9 +17,9 @@ const Collapse = ({ title, children }) => {
 
   // Retourne le JSX pour le rendu du composant Collapse
   return (
-      <div className={isOpen ? 'full-collapse' : 'closed-collapse'}>
-      
+      <div className={isOpen ? 'full-collapse' : ''}>
       {/* En-tête du menu déroulant cliquable */}
+
       <div className="opened-collapse" onClick={handleToggle}>
         {/* Titre passé en prop */}
         <h2>{title}</h2>
