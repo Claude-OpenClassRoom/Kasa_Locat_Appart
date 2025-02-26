@@ -24,6 +24,7 @@ classe = '';
 
   // Retourne le JSX pour le rendu du composant Collapse
   return (
+  //<div className={isOpen ? 'full-collapse' : 'closed-collapse'}>
     <div className={classe}>
       {/* En-tête du menu déroulant cliquable */}
       <div className="opened-collapse" onClick={handleToggle}>
