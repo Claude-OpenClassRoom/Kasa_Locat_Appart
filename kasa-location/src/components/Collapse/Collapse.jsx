@@ -15,11 +15,17 @@ const Collapse = ({ title, children }) => {
     setIsOpen(!isOpen);
   };
 
+  let classe ='';
+if(isOpen) {
+classe = 'full-collapse';
+} else {
+classe = '';
+}
+
   // Retourne le JSX pour le rendu du composant Collapse
   return (
-      <div className={isOpen ? 'full-collapse' : ''}>
+    <div className={classe}>
       {/* En-tête du menu déroulant cliquable */}
-
       <div className="opened-collapse" onClick={handleToggle}>
         {/* Titre passé en prop */}
         <h2>{title}</h2>
